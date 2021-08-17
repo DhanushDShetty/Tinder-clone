@@ -6,7 +6,7 @@ var Cards = require('./dbCards.js');
 // App Config
 const app = express();
 const port = process.env.PORT || 8001;
-const connection_url = "mongodb+srv://Tinder_admin:vWHje2N10tiFGlaX@cluster0.bfl0h.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+// const connection_url = "paste the mongodb connection url here";
 
 // Middlewares
 app.use(express.json());
@@ -21,7 +21,7 @@ mongoose.connect(connection_url, {
 });
 
 // API Endpoints
-app.get("/", (req, res) => res.status(200).send("Hello world"));
+app.get("/", (req, res) => res.status(200).send("HELLO"));
 app.post('/tinder/cards', (req, res) => {
     const dbCard = req.body;
     Cards.create(dbCard, (err, data) => {
