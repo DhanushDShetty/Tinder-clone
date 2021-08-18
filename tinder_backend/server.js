@@ -6,7 +6,7 @@ var Cards = require('./dbCards.js');
 // App Config
 const app = express();
 const port = process.env.PORT || 8001;
-// const connection_url = "paste the mongodb connection url here";
+const connection_url = "";
 
 // Middlewares
 app.use(express.json());
