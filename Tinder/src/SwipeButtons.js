@@ -1,4 +1,3 @@
-import { Replay } from '@material-ui/icons'
 import React from 'react'
 import './SwipeButtons.css'
 import ReplayIcon from '@material-ui/icons/Replay';
